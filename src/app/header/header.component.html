@@ -1,0 +1,35 @@
+<header class="app-header">
+  <div class="content-wrap fix">
+    <div class="nav-wrap">
+      <div class="nav-logo">
+        <img src="/assets/Images/logo-white.png" alt="">
+      </div>
+      <nav>
+        <ul class="main-nav">
+          <li class="main-nav-item"
+              *ngFor="let item of nav">
+            <a class="main-nav-item__link"
+               href="#">{{item.title}}</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="main-content">
+      <img class="main-content__logo" src="/assets/Images/logo.png" alt="">
+      <h3 class="main-content__title">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      </h3>
+      <button class="main-content__button">Know More</button>
+      <div class="main-content-scroll">
+        <img  src="/assets/Icons/mouse-scrolling-50-white.png" alt="">
+        <h5 class="main-content-scroll__title">SCROLL DOWN</h5>
+      </div>
+    </div>
+
+  </div>
+
+
+</header>
