@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { Parallax, ParallaxConfig } from 'ng2-parallax/commonjs';
+// import { Parallax, ParallaxConfig } from 'ng2-parallax/commonjs';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -23,7 +23,7 @@ import { HamburgerComponent } from './components/hamburger/hamburger.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    Parallax,
+    // Parallax,
     ServicesComponent,
     PortfolioComponent,
     TeamComponent,

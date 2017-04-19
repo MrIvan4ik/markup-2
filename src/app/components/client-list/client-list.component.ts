@@ -35,37 +35,37 @@ export class ClientListComponent {
 
   clients = [
     {
-      icon: '/assets/Images/logo-google.png',
+      icon: 'assets/Images/logo-google.png',
       name: 'Google.com',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
       author: 'Google Zuckerberg'
     },
     {
-      icon: '/assets/Images/logo-booking.png',
+      icon: 'assets/Images/logo-booking.png',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
       author: 'Booking Zuckerberg',
       name: 'Booking.com'
     },
     {
-      icon: '/assets/Images/logo-dropbox.png',
+      icon: 'assets/Images/logo-dropbox.png',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
       author: 'Dropbox Zuckerberg',
       name: 'Dropbox.com'
     },
     {
-      icon: '/assets/Images/logo-facebook.png',
+      icon: 'assets/Images/logo-facebook.png',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
       author: 'Facebook Zuckerberg',
       name: 'Facebook.com'
     },
     {
-      icon: '/assets/Images/logo-groupon.png',
+      icon: 'assets/Images/logo-groupon.png',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
       author: 'Groupon Zuckerberg',
       name: 'Groupon.com'
     },
     {
-      icon: '/assets/Images/logo-paypal.png',
+      icon: 'assets/Images/logo-paypal.png',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
       author: 'Mark Zuckerberg',
       name: 'Paypal.com'

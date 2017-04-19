@@ -11,11 +11,11 @@
 
     <div class="list-slider">
       <div class="list-slider-body">
-        <img class="list-slider-body__controls" src="/assets/Icons/left-arrow.png" alt="" (click)="prevCompany()">
+        <img class="list-slider-body__controls" src="assets/Icons/left-arrow.png" alt="" (click)="prevCompany()">
         <div class="list-slider__quote" [@auhtorQuote]="activeCompany.state">
           {{ activeCompany.quote }}
         </div>
-        <img class="list-slider-body__controls" src="/assets/Icons/right-arrow.png" alt="" (click)="nextCompany()">
+        <img class="list-slider-body__controls" src="assets/Icons/right-arrow.png" alt="" (click)="nextCompany()">
       </div>
       <div class="list-slider__author" [@auhtorName]="activeCompany.state">
         {{ activeCompany.author }}
