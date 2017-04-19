@@ -1,0 +1,94 @@
+@import './../../../styles.sass'
+
+=social-icon($url)
+  &::after
+    position: absolute
+    content: ""
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-repeat: no-repeat
+    background-position: center
+    background-image: url($url)
+
+.app-team
+  min-height: 565px
+  background: $white
+  // +triangle-top
+
+
+.content-wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: auto
+  height: 100%
+  padding: 0 20px
+  +fix(30px)
+
+.team__title
+  +title($blue)
+  margin-top: 65px
+
+.team__description
+  text-align: center
+  margin-top: 43px
+  max-width: 346px
+  width: 100%
+
+.team-list
+  display: flex
+  flex-wrap: wrap
+  margin-top: 66px
+  justify-content: space-around
+  width: 100%
+
+.team-list-item
+  background-repeat: no-repeat
+  height: 250px
+  width: 262px
+  background-position: center
+  background-size: cover
+  position: relative
+
+  &:hover .team-list-item__overlay
+    opacity: 1
+
+.team-list-item__overlay
+  +transition
+  cursor: pointer
+  opacity: 0
+  background: $hover
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+
+.team-list-item-social
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.team-list-item-social__icon
+  border-radius: 50%
+  background: #fff
+  width: 55px
+  height: 55px
+  margin-right: 12px
+  cursor: pointer
+  position: relative
+
+  &:last-child
+    margin-right: 0
+
+  &.twitter
+    +social-icon("/assets/Icons/twitter-icon.png")
+
+  &.instagram
+    +social-icon("/assets/Icons/instagram-icon.png")
+
+  &.linkedin
+    +social-icon("/assets/Icons/linkedin-icon.png")

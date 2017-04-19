@@ -1,0 +1,77 @@
+@import './../../../styles.sass'
+
+@media (max-width: 923px)
+  .list-line
+    display: none
+
+@media (max-width: 321px)
+  .client-list-wrapper
+    flex-direction: column
+    align-items: center
+
+  .list-slider
+    flex-direction: column
+    align-items: center
+
+
+.client-list-wrapper
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  +fix(30px)
+
+.client-list__item
+  display: inline-block
+  cursor: pointer
+  margin-right: 5px
+
+.list-line
+  width: 100%
+  margin-top: 20px
+  background: $blue
+  height: 1px
+
+.list-line__triangle
+    position: absolute
+    border-left: 15px solid transparent
+    border-right: 15px solid transparent
+    border-top: 16px solid $blue
+    transition: all 300ms ease-in
+
+.list-slider
+    width: 100%
+    margin-top: 65px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.list-slider-body
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.list-slider-body__controls
+    cursor: pointer
+
+.list-slider__quote
+    max-width: 733px
+    color: $brown
+    font-family: Raleway
+    font-size: 18px
+    font-weight: 400
+    text-align: center
+    margin: 0 45px
+
+.list-slider__author
+    margin-top: 32px
+    font-family: Raleway
+    font-size: 18px
+    font-weight: 700
+    color: $blue
+    text-align: center
+
+.list-slider__company
+    color: $brown

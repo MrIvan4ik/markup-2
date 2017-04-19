@@ -1,17 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import './styles/fonts.sass'
+@import './styles/mixins.sass'
+
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
 body
   margin: 0
+  background: #fafcfe
 
 p
   margin: 0
 
-.fix
-  max-width: 1140px
+$fix: 1170px
+$triangle-height: 11vw
+
+$white: #fafcfe
+$blue: #2980b9
+$brown: #616161
+$overlay-color: rgba(41, 128, 185, .4)
+$hover: rgba(41, 128, 185, .7)
 
 
-.logo-small
-  color: red
+.description-text
+  color: $brown
+  font-family: $R
+  font-size: 13px
+  font-weight: 500
 
-@font-face
-  font-family: "Raleway"
-  src: url('/assets/Font/Raleway-Regular.otf') format('opentype')
+
+
+/* Small Devices, Tablets */
+@media (max-width : 768px)
+  html
+    font-size: 15px
+
+/* Extra Small Devices, Phones */
+@media (max-width : 480px)
+  html
+    font-size: 14px
+
+/* Custom, iPhone Retina */
+@media (max-width : 320px)
+  html
+    font-size: 13px

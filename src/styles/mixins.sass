@@ -1,0 +1,68 @@
+=transition()
+  transition: all .5s ease
+
+=fix($pad)
+  max-width: calc(#{$fix} - #{$pad})
+
+=title($color)
+  margin: 0
+  font-family: $RB
+  font-size: 25px
+  text-transform: uppercase
+  color: $color
+  +title-decorator($color)
+
+=title-decorator($color)
+  position: relative
+
+  &:after
+    content: ""
+    position: absolute
+    width: 30px
+    height: 5px
+    background-color: $color
+    bottom: -14px
+    left: 0
+    right: 0
+    margin: 0 auto
+
+
+=triangle-bottom
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    width: 0px
+    height: 0px
+    border-bottom: 11vw solid #fafcfe
+    border-left: 50vw solid transparent
+    bottom: 0
+    right: 0
+    z-index: 2
+
+
+  &:before
+    content: ""
+    position: absolute
+    width: 0px
+    height: 0px
+    border-bottom: 11vw solid #fafcfe
+    border-right: 50vw solid transparent
+    bottom: 0
+    left: 0
+    z-index: 2
+
+=triangle-top
+  position: relative
+
+  &:after
+    content: ""
+    position: absolute
+    width: 0px
+    height: 0px
+    border-top: 11vw solid #fafcfe
+    border-right: 50vw solid transparent
+    border-left: 50vw solid transparent
+    bottom: calc(-11vw - -2px)
+    right: 0
+    z-index: 2

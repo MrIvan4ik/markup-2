@@ -1,0 +1,37 @@
+@import './../../../styles.sass'
+
+.app-clients
+  display: block
+  min-height: 512px
+  padding: 0 20px
+  // position: relative
+  +triangle-top
+
+.content-wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: auto
+  height: 100%
+  +fix(30px)
+
+.clients__title
+  +title($blue)
+  margin-top: 65px
+
+.clients__desc
+  margin-top: 45px
+  color: $brown
+  max-width: 346px
+  font-family: Raleway
+  font-size: 13px
+  font-weight: 400
+  text-align: center
+
+.clients-list
+  margin-top: 66px
+  margin-bottom: 20px
+  width: 100%
+
+.triangle
+  +triangle-bottom

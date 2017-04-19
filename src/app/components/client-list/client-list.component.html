@@ -1,0 +1,26 @@
+<div class="client-list">
+  <div class="client-list-wrapper" #wrapper>
+    <div class="client-list__item" *ngFor="let item of this.clients">
+      <img src="{{item.icon}}" alt="" (click)="setCompany($event, item)">
+    </div>
+    <span class="list-line">
+      <span class="list-line__triangle"
+            [ngStyle]="{'left': trianglePos+'px' }"
+            ></span>
+    </span>
+
+    <div class="list-slider">
+      <div class="list-slider-body">
+        <img class="list-slider-body__controls" src="/assets/Icons/left-arrow.png" alt="" (click)="prevCompany()">
+        <div class="list-slider__quote" [@auhtorQuote]="activeCompany.state">
+          {{ activeCompany.quote }}
+        </div>
+        <img class="list-slider-body__controls" src="/assets/Icons/right-arrow.png" alt="" (click)="nextCompany()">
+      </div>
+      <div class="list-slider__author" [@auhtorName]="activeCompany.state">
+        {{ activeCompany.author }}
+        <span class="list-slider__company">, {{ activeCompany.name }} </span>
+      </div>
+    </div>
+  </div>
+</div>

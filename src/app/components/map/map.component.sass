@@ -1,0 +1,83 @@
+@import './../../../styles.sass'
+
+.app-map
+  display: block
+  min-height: 949px
+  background-image: url('/assets/Images/hero-03.jpg')
+  background-position: center
+  background-size: cover
+  position: relative
+
+
+  .overlay
+      position: absolute
+      background-color: rgba(0,0,0,.5)
+      height: 100%
+      width: 100%
+      bottom: 0
+      top: 0
+      left: 0
+      right: 0
+
+  &:before
+      content: ""
+      position: absolute
+      top: 0
+      width: 0px
+      height: 0px
+      border-top: 11vw solid #fafcfe
+      border-right: 50vw solid transparent
+      border-left: 50vw solid transparent
+      bottom: calc(-11vw - -2px)
+      right: 0
+      z-index: 2
+
+.content-wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: $triangle-height 20px 20px
+  margin: auto
+  height: 100%
+  +fix(30px)
+
+.map__title
+  +title($white)
+  margin-top: 65px
+
+.map__desc
+  margin-top: 45px
+  color: $white
+  max-width: 346px
+  font-family: Raleway
+  font-size: 13px
+  font-weight: 400
+  text-align: center
+
+.map__icon
+    margin-top: 65px
+    width: 100%
+
+.map__triangle
+   &:after
+     content: ""
+     position: absolute
+     width: 0px
+     height: 0px
+     border-bottom: 11vw solid #fafcfe
+     border-left: 50vw solid transparent
+     bottom: 0
+     right: 0
+     z-index: 2
+
+
+   &:before
+     content: ""
+     position: absolute
+     width: 0px
+     height: 0px
+     border-bottom: 11vw solid #fafcfe
+     border-right: 50vw solid transparent
+     bottom: 0
+     left: 0
+     z-index: 2

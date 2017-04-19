@@ -1,20 +1,25 @@
 <header class="app-header">
-  <div class="content-wrap fix">
+  <div class="content-wrap">
     <div class="nav-wrap">
       <div class="nav-logo">
         <img src="/assets/Images/logo-white.png" alt="">
       </div>
-      <nav>
-        <ul class="main-nav">
-          <li class="main-nav-item"
-              *ngFor="let item of nav">
-            <a class="main-nav-item__link"
-               href="#">{{item.title}}</a>
-          </li>
-        </ul>
-      </nav>
-
+      <ul class="main-nav">
+        <li class="main-nav-item" *ngFor="let item of nav">
+          <a class="main-nav-item__link" href="#">{{item.title}}</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <app-hamburger [state]="state" (update)="onUpdate($event)"></app-hamburger>
+      </div>
     </div>
+
+    <ul class="hamburger-nav" *ngIf="state" [@menu]="state">
+      <li class="hamburger-nav-item" *ngFor="let item of nav">
+        <a class="hamburger-item__link" href="#">{{item.title}}</a>
+      </li>
+    </ul>
+
 
     <div class="main-content">
       <img class="main-content__logo" src="/assets/Images/logo.png" alt="">
@@ -24,7 +29,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </h3>
       <button class="main-content__button">Know More</button>
       <div class="main-content-scroll">
-        <img  src="/assets/Icons/mouse-scrolling-50-white.png" alt="">
+        <img src="/assets/Icons/mouse-scrolling-50-white.png" alt="">
         <h5 class="main-content-scroll__title">SCROLL DOWN</h5>
       </div>
     </div>
